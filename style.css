@@ -1,0 +1,148 @@
+body {
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(90deg,#ff5b00 50%, rgba(80,80,80,.35) 50%);
+
+}
+
+.animation-wrapper {
+  width: 50%;
+  padding-bottom: 50%;
+}
+
+.sphere-animation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 580px;
+  height: 580px;
+  margin: -290px 0 0 -290px;
+}
+
+.sphere path {
+  fill: url(#sphereGradient);
+  stroke-width: 2px;
+  stroke: rgba(80,80,80,.35);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+nav{
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 8vh;
+  height: 10vh;
+  /* background-color: black; */
+  font-family: 'Libre Baskerville', serif;
+}
+
+.logo{
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 20px;
+}
+
+.SignIn{
+  cursor: pointer;
+  color: #ff5b00;
+  border-radius: 16px;
+  padding: 5px 10px;
+  line-height: 1;
+  background-color: rgba(80,80,80,1);
+}
+.SignUp{
+  cursor: pointer;
+  border-radius: 16px;
+  padding: 5px 10px;
+  line-height: 1;
+  background-color: #ff5b00;
+}
+.nav-links{
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  width: 30em;
+}
+.nav-links li{
+  list-style: none;
+}
+.nav-links button{
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: large;
+}
+section{
+  display: none;
+  position: absolute;
+  align-items: center;
+  height: 50%;
+  width: 50vh;
+  background-color: rgba(80,80,80,0.3);
+  margin: 10% 38%;
+  border-radius: 16px;
+  z-index: 1;
+}
+form{
+  text-align: center;
+  margin-top: 20px;
+
+}
+
+form label{
+  color: #ff5b00;  
+}
+form input{
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: rgba(80,80,80,0.1);
+  border: black;
+}
+#submit{
+  background-color: #ff5b00;
+}
+header{
+  display: none;
+  position: absolute;
+  align-items: center;
+  height: 50%;
+  width: 50vh;
+  background-color: rgba(255, 91, 0, 0.3);
+  margin: 10% 40%;
+  border-radius: 16px;
+  z-index: 1;
+}
+header form{
+  text-align: center;
+  margin-top: 20px;
+}
+header form label{
+  color: black;
+}
+header form input{
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 91, 0, 0.1);
+  border: black;
+}
+#login{
+  color: #ff5b00;
+  background-color: rgba(80,80,80,1);
+}
+@media (min-width: 500px) {
+  .sphere path {
+    stroke-width: 1px;
+  }
+  .SignIn{
+    cursor: pointer;
+  }
+}
