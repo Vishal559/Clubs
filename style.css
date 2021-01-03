@@ -64,6 +64,15 @@ nav{
   line-height: 1;
   background-color: #ff5b00;
 }
+
+.SignIn:hover,.SignUp:hover{
+  transform: scale(1.2);
+}
+
+.SignIn:active,.SignUp:active{
+  transform: scale(1);
+}
+
 .nav-links{
   z-index: 1;
   display: flex;
@@ -87,8 +96,8 @@ section{
   align-items: center;
   height: 50%;
   width: 50vh;
-  background-color: rgba(80,80,80,0.3);
-  margin: 10% 38%;
+  background-color: rgba(255,255,255,0.5);
+  margin: 10% 40%;
   border-radius: 16px;
   z-index: 1;
 }
@@ -99,7 +108,7 @@ form{
 }
 
 form label{
-  color: #ff5b00;  
+  color: #ff5b00;
 }
 form input{
   border-radius: 5px;
@@ -116,7 +125,7 @@ header{
   align-items: center;
   height: 50%;
   width: 50vh;
-  background-color: rgba(255, 91, 0, 0.3);
+  background-color: rgba(255,255,255,0.5);
   margin: 10% 40%;
   border-radius: 16px;
   z-index: 1;
@@ -127,17 +136,32 @@ header form{
 }
 header form label{
   color: black;
+  margin-bottom: 10px;
 }
 header form input{
+  height: 30px;
   border-radius: 5px;
   margin-bottom: 10px;
-  background-color: rgba(255, 91, 0, 0.1);
+  background-color: rgba(0,0,0,0.5);
   border: black;
+  color: white;
+  padding: 5px;
 }
 #login{
-  color: #ff5b00;
-  background-color: rgba(80,80,80,1);
+  color:white;
+  font-weight: bolder;
+  font-variant-caps: all-petite-caps;
+  width: 100px;
+  background-color: black;
 }
+
+#login:hover{
+  transform: scale(1.2);
+}
+#login:active{
+  transform: scale(1);
+}
+
 @media (min-width: 500px) {
   .sphere path {
     stroke-width: 1px;
