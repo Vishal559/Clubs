@@ -1,26 +1,29 @@
-var a;
-function signinForm()
-{
-  if(a==1)
-  {
+var ain=false;
+var aup=false;
+function showforms(target){
+  var signin="signin"
+  var signup="signup"
+  // console.log(target.name);
+  if(target===signin){
+    if(ain){
+      document.querySelector("header").style.display="none";
+      ain=false;
+    }else{
+      document.querySelector("header").style.display="inline";
+      ain=true;
+    }
     document.querySelector("section").style.display="none";
-    return a=0;
-  }
-  else{
-    document.querySelector("section").style.display="inline";
-    return a=1;
-  }
-}
-function signupForm()
-{
-  if(a==1)
-  {
+    aup=false;
+  }else{
+    if(aup){
+      document.querySelector("section").style.display="none";
+      aup=false;
+    }else{
+      document.querySelector("section").style.display="inline";
+      aup=true;
+    }
     document.querySelector("header").style.display="none";
-    return a=0;
-  }
-  else{
-    document.querySelector("header").style.display="inline";
-    return a=1;
+    ain=false;
   }
 }
 
@@ -105,7 +108,7 @@ var sphereAnimation = (function() {
     breathAnimation.play();
     shadowAnimation.play();
   }
-  
+
   init();
 
 })();

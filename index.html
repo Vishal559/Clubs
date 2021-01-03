@@ -5,7 +5,7 @@
   <title>Club</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <link rel='stylesheet' href='https://codepen.io/juliangarnier/pen/75efae7724dbc3c055e918057fc4aca5.css'><link rel="stylesheet" href="./style.css">
-
+ <script src="./script.js"></script> 
 </head>
 <body>
   <section id="signupform">
@@ -17,7 +17,7 @@
         <label for="password">Password</label><br>
         <input placeholder="Password" type="password" id="password" name="password" ><br><br>
         <input id="submit" type="submit" value="Register">
-    </form> 
+    </form>
   </section>
   <header class="in">
     <form class="inForm" action="/action_page.php">
@@ -26,7 +26,7 @@
         <label for="password">Password</label><br>
         <input placeholder="Password" type="password" id="password" name="password" ><br><br>
         <input id="login" type="submit" value="Sign In">
-    </form> 
+    </form>
 </header>
 <!-- partial:index.partial.html -->
 <nav>
@@ -35,10 +35,10 @@
   </div>
   <ul class="nav-links">
       <li>
-          <button onclick="signinForm()" class="SignIn">SignUp</button>
+          <button class="SignIn" onclick="showforms(this.name);" name="signup">SignUp</button>
       </li>
       <li>
-          <button class="SignUp" onclick="signupForm()">SignIn</button>
+          <button class="SignUp" onclick="showforms(this.name);" name="signin">SignIn</button>
       </li>
   </ul>
   <div class="burger">
@@ -82,7 +82,8 @@
   </div>
 </div>
 <!-- partial -->
-  <script src='https://codepen.io/juliangarnier/pen/75efae7724dbc3c055e918057fc4aca5.js'></script><script  src="./script.js"></script>
+  <script src='https://codepen.io/juliangarnier/pen/75efae7724dbc3c055e918057fc4aca5.js'></script>
+  <script  src="./script.js"></script>
 
 </body>
 </html>
