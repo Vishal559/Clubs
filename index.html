@@ -5,11 +5,11 @@
   <title>Club</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <link rel='stylesheet' href='https://codepen.io/juliangarnier/pen/75efae7724dbc3c055e918057fc4aca5.css'><link rel="stylesheet" href="./style.css">
- <script src="./script.js"></script> 
+ <script src="./script.js"></script>
 </head>
 <body>
   <section id="signupform">
-    <form class="upForm" action="/action_page.php">
+    <form class="upForm" action="http://localhost:3005/signup" method="post">
         <label for="fname">Username</label><br>
         <input placeholder="Username" type="text" id="fname" name="fname" ><br>
         <label for="email">Email</label><br>
@@ -20,7 +20,7 @@
     </form>
   </section>
   <header class="in">
-    <form class="inForm" action="/action_page.php">
+    <form class="inForm" action="http://localhost:3005/login" method="post">
         <label for="username">Username</label><br>
         <input placeholder="Username" type="text" id="fname" name="fname" ><br>
         <label for="password">Password</label><br>
